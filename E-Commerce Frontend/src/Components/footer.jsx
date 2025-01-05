@@ -48,15 +48,15 @@ const Footer = () => {
                     </p>
                     <div className='flex justify-between items-center gap-2 mt-4'>
                         <div className="flex items-center gap-2">
-                            <Link className="cursor-pointer bg-white relative inline-flex items-center justify-center gap-2 rounded-md text-[1rem] font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:text-[#8D0B41] hover:underline h-9 rounded-md px-3">
+                            <Link to="/payment" className="cursor-pointer bg-white relative inline-flex items-center justify-center gap-2 rounded-md text-[1rem] font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:text-[#8D0B41] hover:underline h-9 rounded-md px-3">
                                 <BadgeIndianRupee size="22" stroke="#8D0B41" />
                                 Payments
                             </Link>
-                            <Link className="cursor-pointer bg-white relative inline-flex items-center justify-center gap-2 rounded-md text-[1rem] font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:text-[#60A5FA] hover:underline h-9 rounded-md px-3">
+                            <Link to="/shipping" className="cursor-pointer bg-white relative inline-flex items-center justify-center gap-2 rounded-md text-[1rem] font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:text-[#60A5FA] hover:underline h-9 rounded-md px-3">
                                 <Truck size="22" stroke="#60A5FA" />
                                 Shipping
                             </Link>
-                            <Link className="cursor-pointer bg-white relative inline-flex items-center justify-center gap-2 rounded-md text-[1rem] font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:text-[#578E7E] hover:underline h-9 rounded-md px-3">
+                            <Link to="/cancellation&return" className="cursor-pointer bg-white relative inline-flex items-center justify-center gap-2 rounded-md text-[1rem] font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:text-[#578E7E] hover:underline h-9 rounded-md px-3">
                                 <TicketXIcon size="22" stroke="#578E7E" />
                                 Cancellation & Returns
                             </Link>

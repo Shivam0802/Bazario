@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Navbar from "../Components/navbar";
 import ProductCard from "../Components/productCard";
 import Adscard from "../Components/adsCard";
 import Footer from "../Components/footer";
-import { ChevronLeft, ChevronRight, ArrowBigUpDash, Shirt, Truck, BadgePercent, BadgeIndianRupee, Mail } from 'lucide-react';
+import { ChevronLeft, ChevronRight, ArrowBigUpDash, Shirt, Truck, BadgePercent, BadgeIndianRupee, Mail, Redo2 } from 'lucide-react';
 import Axios from "axios";
 
 const ads = [
@@ -148,13 +149,19 @@ const Homepage = () => {
                 </div>
             </section>
             <section className="flex flex-col mt-8">
-                <div className="flex flex-col w-[35%] mx-28">
+                <div className="flex justify-between items-center mx-28">
+                <div className="flex flex-col w-[35%]">
                     <h1 className="text-2xl font-normal uppercase text-gray-800 mt-4 leading-3">
                         New Arrivals
                     </h1>
                     <p className="text-[1.12rem] font-light text-gray-500 leading-8">
                         Check out the latest products in store now
                     </p>
+                </div>
+                <Link to="/product" className="flex items-cemter gap-2 bg-gray-100 py-2 px-4 rounded-tl-[1rem] rounded-br-[1rem] rounded-md shadow-zinc-900 shadow-lg text-[1.12rem] text-[#3C3D37] hover:text-[#AE445A] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300">
+                    View all products 
+                    <Redo2 size="20" className="inline-block ml-2" />
+                </Link>
                 </div>
                 <div className="my-8 mx-28 grid grid-cols-5 gap-8">
                     {products.map((product) => (
